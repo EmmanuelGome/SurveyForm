@@ -1,0 +1,75 @@
+:root {
+    --color-fondo: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7));
+    --color-fondo-formulario: rgba(27, 27, 50, 0.8);
+    --color-formulario: #f4f3f3;
+    --color-boton: #37af65;
+}
+
+body {
+    background: var(--color-fondo);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    margin: 0 20%;
+    color: var(--color-formulario);
+}
+header{
+    text-align: center;
+}
+#title {
+    margin: 20px 0 10px 0;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.125rem;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    margin: 10px 0;
+}
+
+#survey-form {
+    background: var(--color-fondo-formulario);
+    margin: 0 5%;
+    padding: 2.5rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin: 25px 0;
+}
+
+label, button, p {
+    font-size: 1.2rem;
+}
+
+input,
+textarea,
+select{
+    padding: 10px;
+    width: 100%;
+}
+
+.div-radio,
+.div-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input-radio{
+    width: auto;
+    margin: 10px;
+}
+.input-checkbox{
+  width: auto;
+  margin: 10px;
+}
+#submit-div button {
+    width: 100%;
+    color: white;
+    background: var(--color-boton);
+    display: block;
+    padding: 0.75rem;
+}

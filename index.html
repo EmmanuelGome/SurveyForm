@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1 id="title">Evaluando gustos</h1>
+                <p id="description">Queremos saber sobre lo que te apasiona</p>
+            </header>
+
+            <form id="survey-form">
+
+                <div class="form-group">
+                    <label id="name-label" for="miNombre">Nombre:</label>
+                    <input type="text" id="name" name="miNombre" placeholder="¿Cuál es tu nombre?" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="email-label" for="miCorreo">Correo:</label>
+                    <input type="email" id="email" name="miCorreo" placeholder="Introduce tu correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label id="number-label" for="miNumero">Edad:</label>
+                    <input id="number" type="number" min="10" max="100" name="miNumero" placeholder="¿Cuál es tu edad?"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label id="label-form">¿Que ocupación te describe mejor?</label>
+                    <select id="dropdown" name="role">
+                        <option disabled selected value>Selecciona ocupación actual</option>
+                        <option value="trabajoCompleto">Trabajador tiempo completo</option>
+                        <option value="trabajoParcial">Trabajador tiempo parcial</option>
+                        <option value="practicante">Practicante</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="noDecir">Prefiero no decir</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group div-radio">
+                    <p>Recomendarías FreeCodeCamper a tus amigos</p>
+                    <label>
+                        <input type="radio" name="user-recomend" class="input-radio" value="porSupuesto">
+                        Por supuesto
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomend" class="input-radio" value="quiza">
+                        Quizá
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomend" class="input-radio" value="paraNada">
+                        Para nada
+                    </label>
+                </div>
+
+                <div class="form-group div-checkbox">
+                    <p>
+                        ¿Qué materias te gustan?
+                    </p>
+                    <label>
+                        <input type="checkbox" name="preferencia" class="input-checkbox" value="matematicas">
+                        Matemáticas
+                    </label>
+                    <label>
+                        <input type="checkbox" name="preferencia" class="input-checkbox" value="historia">
+                        História
+                    </label>
+                    <label>
+                        <input type="checkbox" name="preferencia" class="input-checkbox" value="ingles">
+                        Inglés
+                    </label>
+                    <label>
+                        <input type="checkbox" name="preferencia" class="input-checkbox" value="geografia">
+                        Geografía
+                    </label>
+                    <label>
+                        <input type="checkbox" name="preferencia" class="input-checkbox" value="arte">
+                        Arte
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>¿Algún comentario?</p>
+                    <textarea placeholder="Dejanos tu experiencia con el form">Deja tu comentario</textarea>
+                </div>
+
+                <div class="form-goup" id="submit-div">
+                    <button type="submit" id="submit">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
